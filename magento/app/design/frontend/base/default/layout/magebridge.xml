@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * MageBridge
+ *
+ * @author Yireo
+ * @package MageBridge
+ * @copyright Copyright 2012
+ * @license Yireo EULA (www.yireo.com)
+ * @link http://www.yireo.com
+ */
+-->
+<layout>
+    <default>
+        <reference name="root">
+            <block type="page/html_head" name="head_mb" template="page/html/head_mb.phtml" />
+        </reference>
+
+        <reference name="right">
+            <block type="magebridge/position" name="magebridge-right">
+                <action method="setPosition"><string>right</string></action>
+                <action method="setStyle"><string>magento</string></action>
+            </block>
+        </reference>
+    </default>
+
+    <magebridge_output_test4>
+        <block output="toHtml" type="core/template" name="output.test4" template="magebridge/output/test4.phtml" />
+    </magebridge_output_test4>
+</layout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<connector>
+    <name>MageBridge Profile Connector - JomSocial</name>
+    <params>
+        <param name="config_file" label="Configuration" type="text" default="default" />
+    </params>
+</connector>

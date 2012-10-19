@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="authentication" method="upgrade">
+	<name>Authentication - MageBridge</name>
+	<author>Yireo</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description>Handles user authentication for MageBridge</description>
+
+	<files>
+		<filename plugin="magebridge">magebridge.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+	<config>
+	    <fields name="params">
+			<fieldset name="basic">
+    		    <field name="lookup_email" type="radio" default="0" label="Lookup email" description="Lookup the email-address to authenticate with. Set it to no, to use the entered username instead.">
+			        <option value="0">No</option>
+        			<option value="1">Yes</option>
+		        </field>
+		    </fieldset>
+		</fields>
+	</config>
+</extension>

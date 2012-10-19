@@ -1,0 +1,83 @@
+/**
+ * Joomla! component MageBridge
+ *
+ * @author Yireo
+ * @package MageBridge
+ * @copyright Copyright 2011
+ * @link http://www.yireo.com/
+ */
+
+div.version {
+    margin-top: 5px;
+    background: transparent url(../images/icon-43-check.png) no-repeat 15px 10px;
+    padding: 20px;
+    padding-left: 85px;
+    background-color: white;
+    border-top: 1px solid #cccccc;
+}
+
+div.review {
+    margin-top: 5px;
+    background: transparent url(../images/icon-43-smile.png) no-repeat 15px 10px;
+    padding: 20px;
+    padding-left: 85px;
+    background-color: white;
+    border-top: 1px solid #cccccc;
+}
+
+h2.latest_news_header {
+    background-color: #cf3a3a;
+    border: 1px solid #a60000;
+    border-bottom: 0;
+    color: #ffffff;
+    margin: 0;
+    padding: 6px;
+}
+
+div#latest_news {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    background-color: white;
+    border: 1px solid #a60000;
+}
+
+h2.promotion_header {
+    background-color: #cf3a3a;
+    border: 1px solid #a60000;
+    border-bottom: 0;
+    color: white;
+    margin: 0;
+    padding: 6px;
+}
+
+div#promotion {
+    width: auto;
+    height: auto;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #fffbdd;
+    border: 1px solid #a60000;
+}
+
+div#promotion h3.teaser {
+    font-family:'Just Me Again Down Here',arial,serif;
+    font-size:400%;
+    line-height:100%;
+    font-weight:normal;
+    border:0;
+    color:#d20000;
+    text-align:center;
+    margin: 0;
+    padding: 0;
+}
+
+div#promotion p.link {
+    font-size: 130%;
+    font-weight: bold;
+    line-height:140%;
+    text-align:center;
+}
+
+div#promotion p.link a {
+}

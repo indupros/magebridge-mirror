@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - MageBridge RocketTheme</name>
+	<author>Yireo</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description></description>
+	<files>
+		<filename plugin="magebridgert">magebridgert.php</filename>
+		<filename>index.html</filename>
+	</files>
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="fix_submenu_wrapper" type="radio" default="1" label="Fix Submenu Wrapper" description="">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+                <field name="fix_body_zindex" type="radio" default="1" label="Fix Body Z-index" description="">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+            </fieldset>
+        </fields>
+    </config>
+</extension>

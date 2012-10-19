@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<params>
+		<param name="only_completed" type="list" default="0" label="Only completed" description="Process only product-purchases that are completed">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="expire_amount" type="text" size="4" default="0" label="Expiry" description="To expire this action, set this to a certain amount. Set to 0 to disable this behaviour" />
+		<param name="expire_unit" type="list" default="day" label="Expiry Unit" description="When expiring a purchase, set the applicable time unit here">
+			<option value="day">Day</option>
+			<option value="week">Week</option>
+		</param>
+	</params>
+</form>

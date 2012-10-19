@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Checkout">
+		<message>
+			<![CDATA[This layout shows the Magento checkout page.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Checkout</name>
+		<description>This layout shows the Magento checkout page.</description>
+		<advanced addpath="/administrator/components/com_magebridge/elements">
+		    <param name="store" type="store" default="" label="Magento Store" description="Use this to overwrite the Magento store-scope" />
+		</advanced>
+	</state>
+</metadata>

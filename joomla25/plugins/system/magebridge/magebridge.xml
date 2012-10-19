@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - MageBridge</name>
+	<author>Yireo</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description>MageBridge System Plugin to be configured with a very high ordering</description>
+
+	<files>
+		<filename plugin="magebridge">magebridge.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+		        <field name="enable_ssl_redirect" type="radio" default="1" label="Redirect non-SSL to SSL" description="">
+			        <option value="0">No</option>
+        			<option value="1">Yes</option>
+	        	</field>
+		        <field name="enable_nonssl_redirect" type="radio" default="1" label="Redirect SSL to non-SSL" description="">
+			        <option value="0">No</option>
+        			<option value="1">Yes</option>
+	        	</field>
+    		    <field name="enable_nonsef_redirect" type="radio" default="1" label="Redirect non-SEF" description="">
+	    		    <option value="0">No</option>
+    		    	<option value="1">Yes</option>
+	        	</field>
+    		    <field name="enable_comuser_redirect" type="radio" default="0" label="Redirect com_user" description="">
+	    		    <option value="0">No</option>
+    		    	<option value="1">Yes</option>
+	    	    </field>
+    		    <field name="enable_urlreplacement_redirect" type="radio" default="1" label="Use URL replacements" description="">
+	        		<option value="0">No</option>
+			        <option value="1">Yes</option>
+        		</field>
+		        <field name="filter_js" type="list" default="remove" label="JavaScript filter" description="Method how to remove conflicting JS">
+		        	<option value="comment">Comment script</option>
+        			<option value="remove">Remove script</option>
+		        </field>
+		        <field name="spoof_jomsocial_events" type="radio" default="0" label="Spoof JomSocial events" description="">
+        			<option value="0">No</option>
+		        	<option value="1">Yes</option>
+        		</field>
+		        <field name="spoof_cb_events" type="radio" default="0" label="Spoof CB events" description="">
+        			<option value="0">No</option>
+		        	<option value="1">Yes</option>
+        		</field>
+        		<field name="spoof_magento_login" type="radio" default="0" label="Spoof Magento login" description="">
+        			<option value="0">No</option>
+		        	<option value="1">Yes</option>
+        		</field>
+        		<field name="spoof_sef" type="radio" default="0" label="Spoof third party SEF" description="">
+        			<option value="0">No</option>
+		        	<option value="1">Yes</option>
+        		</field>
+		        <field name="override_modulehelper" type="radio" default="1" label="Override module-helper" description="">
+        			<option value="0">No</option>
+        			<option value="1">Yes</option>
+		        </field>
+            </fieldset>
+    	</fields>
+    </config>
+</extension>

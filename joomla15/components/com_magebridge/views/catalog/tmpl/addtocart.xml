@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Add to cart">
+		<message>
+			<![CDATA[This layout adds a Magento product to the shopping cart.]]>
+		</message>
+	</layout>
+
+	<state>
+		<name>Add to cart</name>
+		<description>This layout adds a Magento product to the shopping cart.</description>
+		<url addpath="/administrator/components/com_magebridge/elements">
+		    <param name="request" type="product" return="id" default="" label="Magento Product" />
+		    <param name="redirect" type="text" default="" label="Redirect Page" description="Example: checkout/onepage" />
+		</url>
+		<advanced addpath="/administrator/components/com_magebridge/elements">
+		    <param name="store" type="store" default="" label="Magento Store" description="Use this to overwrite the Magento store-scope" />
+		</advanced>
+	</state>
+</metadata>

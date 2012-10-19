@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Logout">
+		<message>
+			<![CDATA[This layout shows the Magento logout page.]]>
+		</message>
+	</layout>
+
+	<state>
+		<name>Logout</name>
+		<description>This layout shows the Magento logout page.</description>
+		<params>
+			<param name="intermediate_page" type="radio" default="1" label="Show logout page" description="">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</param>
+            <param name="page_text" type="textarea" rows="10" cols="30" default="" label="Page Text" description="" />
+		</params>
+		<advanced addpath="/administrator/components/com_magebridge/elements">
+		    <param name="store" type="store" default="" label="Magento Store" description="Use this to overwrite the Magento store-scope" />
+		</advanced>
+	</state>
+</metadata>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>Content - MageBridge</name>
+	<author>Yireo</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description>Parses Magento CMS-tags into Magento content</description>
+
+	<files>
+		<filename plugin="magebridge">magebridge.php</filename>
+		<filename>index.html</filename>
+	</files>
+
+    <config>
+		<fields name="params">
+			<fieldset name="basic">
+		        <field name="load_css" type="list" default="0" label="Load CSS" description="Load Magento CSS or not">
+        			<option value="0">No</option>
+		        	<option value="1">Yes</option>
+        		</field>
+		        <field name="load_js" type="list" default="0" label="Load JavaScript" description="Load Magento JavaScript or not">
+        			<option value="0">No</option>
+		        	<option value="1">Yes</option>
+        		</field>
+        	</fieldset>
+	    </fields>
+	</config>
+</extension>

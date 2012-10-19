@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="system" method="upgrade">
+	<name>System - MageBridge T3</name>
+	<author>Yireo</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description></description>
+
+	<files>
+		<filename plugin="magebridget3">magebridget3.php</filename>
+		<filename>index.html</filename>
+		<folder>fields</folder>
+	</files>
+
+	<config>
+	    <fields name="params">
+	        <fieldset name="basic" addpath="/plugins/system/magebridget3/elements">
+        		<field name="layout_homepage" type="t3layout" default="full-width" label="MageBridge homepage" description="Layout for MageBridge homepage" />
+        		<field name="layout_customer" type="t3layout" default="full-width" label="MageBridge customer" description="Layout for MageBridge customer-pages" />
+        		<field name="layout_product" type="t3layout" default="full-width" label="MageBridge product" description="Layout for MageBridge product-pages" />
+        		<field name="layout_category" type="t3layout" default="full-width" label="MageBridge category" description="Layout for MageBridge category-pages" />
+        		<field name="layout_cart" type="t3layout" default="full-width" label="MageBridge cart" description="Layout for MageBridge cart-pages" />
+		        <field name="layout_checkout" type="t3layout" default="full-width" label="MageBridge checkout" description="Layout for MageBridge checkout-pages" />
+		    </fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="CMS Page">
+		<message>
+			<![CDATA[This layout shows a specific Magento CMS Page.]]>
+		</message>
+	</layout>
+
+	<state>
+		<name>CMS Page</name>
+		<description>This layout shows a specific Magento CMS Page.</description>
+		<url addpath="/administrator/components/com_magebridge/elements">
+		    <param name="request" type="cmspage" default="" label="Magento CMS Page" />
+		</url>
+		<advanced addpath="/administrator/components/com_magebridge/elements">
+		    <param name="store" type="store" default="" label="Magento Store" description="Use this to overwrite the Magento store-scope" />
+		</advanced>
+	</state>
+</metadata>

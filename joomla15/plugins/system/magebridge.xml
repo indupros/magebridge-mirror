@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - MageBridge</name>
+	<author>Yireo</author>
+	<creationDate>April 2009</creationDate>
+	<copyright>Copyright (C) 2009 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description></description>
+	<files>
+		<filename plugin="magebridge">magebridge.php</filename>
+	</files>
+	<params>
+		<param name="enable_ssl_redirect" type="radio" default="1" label="Redirect SSL &amp; non-SSL" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_nonsef_redirect" type="radio" default="1" label="Redirect non-SEF" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_comuser_redirect" type="radio" default="0" label="Redirect com_user" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_urlreplacement_redirect" type="radio" default="1" label="Use URL replacements" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="filter_js" type="list" default="remove" label="JavaScript filter" description="Method how to remove conflicting JS">
+			<option value="foo">Replace with foo.js</option>
+			<option value="comment">Comment script</option>
+			<option value="remove">Remove script</option>
+		</param>
+		<param name="spoof_jomsocial_events" type="radio" default="0" label="Spoof JomSocial events" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="spoof_cb_events" type="radio" default="0" label="Spoof CB events" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="spoof_magento_login" type="radio" default="0" label="Spoof Magento login" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="spoof_sef" type="radio" default="0" label="Spoof third party SEF" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="override_modulehelper" type="radio" default="1" label="Override module-helper" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</install>

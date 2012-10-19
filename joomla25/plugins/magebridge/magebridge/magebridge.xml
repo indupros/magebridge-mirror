@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="magebridge" method="upgrade">
+	<name>MageBridge - MageBridge</name>
+	<author>Yireo</author>
+	<creationDate>August 2012</creationDate>
+	<copyright>Copyright (C) 2012 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description>Allows parsing of block-content and the registry</description>
+
+	<files>
+		<filename plugin="magebridge">magebridge.php</filename>
+		<filename>index.html</filename>
+	</files>
+</extension>

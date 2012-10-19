@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content" method="upgrade">
+	<name>Content - MageBridge Tags</name>
+	<author>Yireo</author>
+	<creationDate>April 2009</creationDate>
+	<copyright>Copyright (C) 2009 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description>Adds Magento products to Joomla! content based on tags</description>
+	<files>
+		<filename plugin="magebridgetags">magebridgetags.php</filename>
+		<folder>magebridgetags</folder>
+	</files>
+	<params>
+		<param name="tag_source" type="list" default="metakey" label="Tag source" description="The source from which tags should be read">
+			<option value="metakey">Article Meta Keywords</option>
+			<option value="joomlatags">Joomla! Tags (joomlatags.org)</option>
+		</param>
+		<param name="max_products" type="text" default="10" label="Max products" description="The maximum number of products to display" />
+	</params>
+</install>

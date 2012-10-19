@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Product">
+		<message>
+			<![CDATA[This layout shows a specific Magento product-page.]]>
+		</message>
+	</layout>
+
+	<state>
+		<name>Product</name>
+		<description>This layout shows a specific Magento product-page.</description>
+		<url addpath="/administrator/components/com_magebridge/elements">
+		    <param name="request" type="product" return="id" default="" label="Magento Product" />
+		</url>
+		<advanced addpath="/administrator/components/com_magebridge/elements">
+		    <param name="store" type="store" default="" label="Magento Store" description="Use this to overwrite the Magento store-scope" />
+		</advanced>
+	</state>
+</metadata>

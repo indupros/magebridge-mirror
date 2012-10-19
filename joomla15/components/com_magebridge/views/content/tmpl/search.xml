@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Advanced search">
+		<message>
+			<![CDATA[This layout shows the Magento advanced search.]]>
+		</message>
+	</layout>
+	<state>
+		<name>Advanced search</name>
+		<description>This layout shows the Magento advanced search.</description>
+		<advanced addpath="/administrator/components/com_magebridge/elements">
+		    <param name="store" type="store" default="" label="Magento Store" description="Use this to overwrite the Magento store-scope" />
+		</advanced>
+	</state>
+</metadata>

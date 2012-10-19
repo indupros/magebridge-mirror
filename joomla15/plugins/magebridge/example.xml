@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="magebridge" method="upgrade">
+	<name>MageBridge - Example</name>
+	<author>Yireo</author>
+	<creationDate>July 2011</creationDate>
+	<copyright>Copyright (C) 2011 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.0</version>
+	<description>Example plugin to push data into the MageBridge registry</description>
+	<files>
+		<filename plugin="example">example.php</filename>
+	</files>
+	<params/>
+</install>

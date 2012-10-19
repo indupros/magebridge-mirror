@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="1.5.0" method="upgrade">
+    <name>MageBridge</name>
+    <author>Yireo</author>
+    <authoremail>development@yireo.com</authoremail>
+    <authorurl>http://www.yireo.com</authorurl>
+    <creationDate>May 2012</creationDate>
+    <copyright>Copyright 2012 Yireo (http://www.yireo.com/)</copyright>
+    <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <version>1.7.4276</version>
+    <description>This component integrates Magento e-commerce into Joomla!</description>
+
+    <!-- installation part -->
+    <install>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+    <installfile>install.magebridge.php</installfile>
+    <uninstallfile>uninstall.magebridge.php</uninstallfile>
+    
+    <!-- user part -->
+    <files folder="components/com_magebridge">
+        <filename>connector.php</filename>
+        <filename>controller.php</filename>
+        <filename>index.html</filename>
+        <filename>magebridge.php</filename>
+        <filename>router.php</filename>
+        <filename>view.php</filename>
+        <folder>connectors</folder>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+        <folder>libraries</folder>
+        <folder>models</folder>
+        <folder>rewrite</folder>
+        <folder>rewrite-16</folder>
+        <folder>rewrite-17</folder>
+        <folder>sef_ext</folder>
+        <folder>views</folder>
+    </files>
+
+    <media folder="media">
+        <folder>com_magebridge</folder>
+    </media>
+
+    <languages folder="language/en-GB">
+        <language tag="en-GB">en-GB.com_magebridge.ini</language>
+    </languages>
+
+    <!-- administration part -->
+    <administration>
+
+        <menu task="default" img="../media/com_magebridge/images/yireo-small.png">MageBridge</menu>
+        <submenu>
+            <menu link="option=com_magebridge&amp;view=home">Home</menu>
+            <menu link="option=com_magebridge&amp;view=config">Configuration</menu>
+            <menu link="option=com_magebridge&amp;view=stores">Store Relations</menu>
+            <menu link="option=com_magebridge&amp;view=products">Product Relations</menu>
+            <menu link="option=com_magebridge&amp;view=usergroups">Usergroup Relations</menu>
+            <menu link="option=com_magebridge&amp;view=connectors">Connectors</menu>
+            <menu link="option=com_magebridge&amp;view=urls">URL Replacements</menu>
+            <menu link="option=com_magebridge&amp;view=users">Users</menu>
+            <menu link="option=com_magebridge&amp;view=check">System Check</menu>
+            <menu link="option=com_magebridge&amp;view=logs">Logs</menu>
+            <menu link="option=com_magebridge&amp;view=update">Update</menu>
+        </submenu>
+
+        <files>
+            <filename>magebridge.xml</filename>
+            <filename>install.magebridge.php</filename>
+            <filename>uninstall.magebridge.php</filename>
+        </files>
+        <files folder="administrator/components/com_magebridge">
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <filename>jupgrade.xml</filename>
+            <filename>magebridge.php</filename>
+            <filename>upgrade.php</filename>
+            <filename>view.php</filename>
+            <folder>controllers</folder>
+            <folder>elements</folder>
+            <folder>fields</folder>
+            <folder>helpers</folder>
+            <folder>models</folder>
+            <folder>libraries</folder>
+            <folder>tables</folder>
+            <folder>sql</folder>
+            <folder>views</folder>
+        </files>
+
+        <languages folder="administrator/language/en-GB">
+            <language tag="en-GB">en-GB.com_magebridge.menu.ini</language>
+            <language tag="en-GB">en-GB.com_magebridge.ini</language>
+        </languages>
+
+    </administration>
+
+</install>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>MageBridge: Products</name>
+	<author>Yireo</author>
+	<creationDate>September 2009</creationDate>
+	<copyright>Copyright (C) 2009 Yireo.com. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>development@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description>This module shows Magento products with various configurations</description>
+	<files>
+		<filename module="mod_magebridge_products">mod_magebridge_products.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+
+    <languages>
+        <language tag="en-GB">en-GB.mod_magebridge_products.ini</language>
+    </languages>
+
+	<params addpath="/administrator/components/com_magebridge/elements">
+		<param name="ordering" type="list" default="1" label="Ordering" description="">
+			<option value="">Default</option>
+			<option value="newest">Newest products</option>
+			<option value="oldest">Oldest products</option>
+			<!--<option value="latest">Latest purchases</option>-->
+			<option value="random">Random products</option>
+			<option value="popular">Most popular products</option>
+		</param>
+		<param name="count" type="text" default="5" label="Number of products" description="" />
+		<param name="category_id" type="category" return="id" default="" label="Magento Category" />
+		<param name="layout" type="list" default="default" label="Layout" description="Which layout-file to use for this module">
+			<option value="default">Default</option>
+			<option value="menu">Menu</option>
+			<option value="slideshow">Slideshow</option>
+		</param>
+	</params>
+	<params group="advanced">
+	    <param type="spacer" default="&lt;h3&gt;Hide or show&lt;/h3&gt;" />
+		<param name="show_title" type="list" default="1" label="Title" description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_short_description" type="list" default="1" label="Short description" description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_description" type="list" default="0" label="Full description" description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_thumb" type="list" default="1" label="Thumbnail" description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_price" type="list" default="1" label="Price" description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="special_price" type="list" default="1" label="Special Price" description="">
+			<option value="0">Hide</option>
+			<option value="1">Only special if available</option>
+			<option value="2">Show both normal as special</option>
+		</param>
+		<param name="show_readmore" type="list" default="1" label="Read-more" description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="show_addtocart" type="list" default="1" label="Add-to-cart" description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+	    <param type="spacer" default="&lt;h3&gt;Other visual options&lt;/h3&gt;" />
+		<param name="thumb" type="list" default="thumbnail" label="Thumbnail" description="Which image to use">
+			<option value="thumbnail">Thumbnail</option>
+			<option value="small_image">Small image</option>
+			<option value="image">Image</option>
+		</param>
+		<param name="thumb_size" type="text" default="" label="Thumbnail size" size="4" description="Specifiy the image-size in pixels" />
+		<param name="readmore" type="text" default="Read more about %s" label="Read-more text" description="" />
+		<param name="addtocart" type="text" default="Add %s to cart" label="Add-to-cart text" description="" />
+		<param name="show_noitems" type="list" default="1" label="No Products Found" description="">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+	</params>
+	<params group="other">
+	    <param type="spacer" default="&lt;h3&gt;Slideshow&lt;/h3&gt;" />
+		<param name="effect" type="list" default="fade" label="Transition Effect">
+			<option value="blindX">Blind Horizontal</option>
+			<option value="blindY">Blind Vertical</option>
+			<option value="blindZ">Blind Diagonal</option>
+			<option value="cover">Cover</option>
+			<option value="curtainX">Curtain Horizontal</option>
+			<option value="curtainY">Curtain Vertical</option>
+			<option value="fade">Fade</option>
+			<option value="fadeZoom">Fade Zoom</option>
+			<option value="growX">Grow Horizontal</option>
+			<option value="growY">Grow Vertical</option>
+			<option value="scrollUp">Scroll Up</option>
+			<option value="scrollDown">Scroll Down</option>
+			<option value="scrollLeft">Scroll Left</option>
+			<option value="scrollRight">Scroll Right</option>
+			<option value="scrollHorz">Scroll Horinzontal</option>
+			<option value="scrollVert">Scroll Vertical</option>
+			<option value="shuffle">Shuffle</option>
+			<option value="slideX">Slide Horizontal</option>
+			<option value="slideY">Slide Vertical</option>
+			<option value="toss">Toss</option>
+			<option value="turnUp">Turn Up</option>
+			<option value="turnDown">Turn Down</option>
+			<option value="turnLeft">Turn Left</option>
+			<option value="turnRight">Turn Right</option>
+			<option value="uncover">Uncover</option>
+			<option value="wipe">Wipe</option>
+			<option value="zoom">Zoom</option>
+		</param>
+		<param name="timeout" type="text" default="4000" label="Transition time" />
+		<param name="speed" type="text" default="1000" label="Transition speed" />
+		<param name="easing" type="list" default="" label="Easing" description="Easing which only looks good with some transition effects">
+			<option value="">None</option>
+			<option value="jswing">Swing</option>
+			<option value="easeInOutQuad">Quad</option>
+			<option value="easeInOutCubic">Cubic</option>
+			<option value="easeInOutQuart">Quart</option>
+			<option value="easeInOutQint">Qint</option>
+			<option value="easeInOutSine">Sine</option>
+			<option value="easeInOutExpo">Expo</option>
+			<option value="easeInOutCirc">Circ</option>
+			<option value="easeInOutElastic">Elastic</option>
+			<option value="easeInOutBack">Back</option>
+			<option value="easeInOutBounce">Bounce</option>
+		</param>
+		<param name="load_slideshow_jquery" type="list" default="1" label="Load jQuery core" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="load_slideshow_jquery_easing" type="list" default="1" label="Load jQuery Easing" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="load_slideshow_jquery_cycle" type="list" default="1" label="Load jQuery Cycle" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="load_slideshow_css" type="list" default="1" label="Load CSS" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+	    <param type="spacer" default="&lt;h3&gt;Other&lt;/h3&gt;" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+</install>

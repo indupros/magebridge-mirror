@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system" method="upgrade">
+	<name>System - MageBridge YOOtheme</name>
+	<author>Yireo</author>
+	<creationDate>April 2009</creationDate>
+	<copyright>Copyright (C) 2009 Yireo.com. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@yireo.com</authorEmail>
+	<authorUrl>www.yireo.com</authorUrl>
+	<version>1.7.4276</version>
+	<description></description>
+	<files>
+		<filename plugin="magebridgeyoo">magebridgeyoo.php</filename>
+	</files>
+	<params>
+		<param name="enable_js_widgetkit" type="radio" default="1" label="Enable Widgetkit JS" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_js_warp" type="radio" default="0" label="Enable Warp JS" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enable_js_template" type="radio" default="0" label="Enable template JS" description="">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+    </params>
+</install>
